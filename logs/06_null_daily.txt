@@ -1,0 +1,53 @@
+============================================================================
+DAILY NULL BENCHMARKS
+============================================================================
+  Using: data\xauusd_daily.parquet
+  Research window: 2004-06-11 -> 2023-12-29  (5,040 days)
+  SEALED         : 2024-01-01 -> 2026-07-31
+  Cost           : $0.00/oz (zero by decision)
+
+----------------------------------------------------------------------------
+1. BUY AND HOLD
+----------------------------------------------------------------------------
+  Whole window : Sharpe +0.576   CAGR +8.98%   maxDD 44.8%
+
+  By regime -- a single number would hide all of this:
+    regime                     sharpe    return    maxDD
+    2004-2007 early bull        +1.32    116.6%    22.0%
+    2008-2011 parabolic         +1.00    113.5%    28.9%
+    2011-2015 BEAR              -0.64    -41.9%    44.5%
+    2016-2018 range             +0.81     21.4%    17.4%
+    2018-2023 dev window        +0.59     56.3%    21.4%
+
+----------------------------------------------------------------------------
+2. RANDOM ENTRIES (300 trials, ~15 signals/yr, 20-day hold)
+----------------------------------------------------------------------------
+  both dirs    mean +0.026   std 0.225   p95 +0.386   max +0.671
+  long-only    mean +0.526   std 0.173   p95 +0.831   max +0.900
+  short-only   mean -0.465   std 0.169   p95 -0.179   max -0.003
+
+  Free Sharpe from simply being long: +0.500
+
+----------------------------------------------------------------------------
+3. SELECTION THRESHOLD (best of 40 variants)
+----------------------------------------------------------------------------
+  both dirs    typical best +0.503   p95 +0.705
+  long-only    typical best +0.894   p95 +1.050
+  short-only   typical best -0.107   p95 +0.045
+
+----------------------------------------------------------------------------
+THE DAILY BAR
+----------------------------------------------------------------------------
+  Buy and hold                  : +0.576
+  Best-of-40 luck, long-biased : +1.050
+  Best-of-40 luck, symmetric   : +0.705
+
+  >> Mostly-LONG strategy must clear   +1.050
+  >> Direction-neutral must clear      +0.705
+
+  Compare to the H1 study: +0.94 / +0.39.
+  Fewer trades widens the null, so these are NOT the same bars.
+
+Wrote -> data\daily_null.json
+============================================================================
+

@@ -1,0 +1,101 @@
+==============================================================================
+STUDY RUNNER -- development window only
+==============================================================================
+  Using: data\XAUUSDm_h1_mt5.parquet
+  Dev window : 2018-01-02 06:00:00 -> 2023-12-29 21:00:00  (35,495 bars)
+  SEALED     : 2024-01-01 -> 2026-07-31 20:00:00  (not touched)
+  Cost       : $0.40/oz (1x)
+
+------------------------------------------------------------------------------
+H1_trend_persistence  (16 variants)
+------------------------------------------------------------------------------
+  #    trades   sharpe   %long    bar   maxDD    CAGR  verdict
+  0       399   +0.129     53%   0.39   41.8%   -0.8%  below bar
+  1       362   +0.072     54%   0.39   40.6%   -2.9%  below bar
+  2       290   +0.047     53%   0.39   32.3%   -1.1%  below bar
+  3       240   +0.275     54%   0.39   28.3%    4.4%  stage0: top trade = 89% of profit
+  4       223   +0.119     53%   0.39   21.6%    0.9%  stage0: top trade = 300% of profit
+  5       203   +0.170     54%   0.39   21.3%    1.7%  stage0: top trade = 143% of profit
+  6       284   -0.015     50%   0.39   69.8%   -6.4%  below bar
+  7       238   +0.211     51%   0.39   59.1%    1.4%  stage0: top trade = 632% of profit
+  8       202   -0.075     50%   0.39   53.5%   -4.2%  below bar
+  9       160   +0.193     51%   0.39   44.3%    2.3%  stage0: top trade = 238% of profit
+  10      159   -0.075     50%   0.39   42.4%   -2.6%  below bar
+  11      130   +0.142     51%   0.39   34.1%    1.2%  stage0: top trade = 289% of profit
+  12     1046   -0.387     50%   0.39   49.7%   -7.0%  below bar
+  13      761   -0.271     50%   0.39   42.8%   -5.7%  below bar
+  14     1029   -0.358     50%   0.39   37.0%   -4.4%  below bar
+  15      705   -0.164     50%   0.39   29.5%   -2.6%  below bar
+
+------------------------------------------------------------------------------
+H2_volatility_regime  (20 variants)
+------------------------------------------------------------------------------
+  #    trades   sharpe   %long    bar   maxDD    CAGR  verdict
+  0       191   -0.806     63%   0.94   58.5%  -11.5%  below bar
+  1       192   -0.715     63%   0.94   43.0%   -7.6%  below bar
+  2       184   -0.537     63%   0.94   36.6%   -5.7%  below bar
+  3       190   -0.595     63%   0.94   25.9%   -4.1%  below bar
+  4       340   -0.789     60%   0.39   72.8%  -14.8%  below bar
+  5       354   -1.050     60%   0.39   65.3%  -14.3%  below bar
+  6       313   -0.228     60%   0.39   43.0%   -3.6%  below bar
+  7       347   -0.787     60%   0.39   42.9%   -7.2%  below bar
+  8       190   -0.815     56%   0.39   58.4%  -11.7%  below bar
+  9       193   -0.567     56%   0.39   43.2%   -6.4%  below bar
+  10      181   -0.394     56%   0.39   37.9%   -4.4%  below bar
+  11      192   -0.400     56%   0.39   27.2%   -3.0%  below bar
+  12      336   -1.071     58%   0.39   76.8%  -18.5%  below bar
+  13      349   -1.044     58%   0.39   65.7%  -13.9%  below bar
+  14      298   -0.269     58%   0.39   41.1%   -4.0%  below bar
+  15      335   -0.854     58%   0.39   45.4%   -7.6%  below bar
+  16      645   -0.609     54%   0.39   68.7%  -12.6%  below bar
+  17      618   -0.816     54%   0.39   53.7%   -9.9%  below bar
+  18      201   -0.775     63%   0.94   51.0%   -8.3%  below bar
+  19      197   -0.786     63%   0.94   35.9%   -5.4%  below bar
+
+------------------------------------------------------------------------------
+H3_session_breakout  (12 variants)
+------------------------------------------------------------------------------
+  #    trades   sharpe   %long    bar   maxDD    CAGR  verdict
+  0       372   -0.261     55%   0.39   36.8%   -4.7%  below bar
+  1       372   -0.314     55%   0.39   27.8%   -3.5%  below bar
+  2       324   -0.427     55%   0.39   44.2%   -6.5%  below bar
+  3       324   -0.545     55%   0.39   35.9%   -5.3%  below bar
+  4       466   -0.786     55%   0.39   57.7%  -10.5%  below bar
+  5       466   -0.599     55%   0.39   37.5%   -5.4%  below bar
+  6       415   -0.649     55%   0.39   52.6%   -8.4%  below bar
+  7       415   -0.468     55%   0.39   35.0%   -4.1%  below bar
+  8       293   -0.231     59%   0.39   26.8%   -2.7%  below bar
+  9       265   -0.401     52%   0.39   39.8%   -4.3%  below bar
+  10      182   -0.774     57%   0.39   21.7%   -4.0%  below bar
+  11       97   -0.459     56%   0.39   13.4%   -1.8%  stage0: only 97 trades
+
+==============================================================================
+STAGE 3 -- FAMILY COHERENCE (the number that matters)
+==============================================================================
+  One variant clearing the bar is weak evidence -- it may be the best
+  of 48 lottery tickets. A family whose MEDIAN variant is profitable
+  cannot be produced by finding one magic parameter.
+
+  family                     n   median     mean     best    worst  passed  verdict
+  H1_trend_persistence      16   +0.060   +0.001   +0.275   -0.387    0/16  COHERENT
+  H2_volatility_regime      20   -0.781   -0.695   -0.228   -1.071    0/20  incoherent -- discard
+  H3_session_breakout       12   -0.463   -0.493   -0.231   -0.786    0/12  incoherent -- discard
+
+------------------------------------------------------------------------------
+H3 CONTROL -- do session hours actually matter?
+------------------------------------------------------------------------------
+  London/NY hours (07,13) : median Sharpe -0.506  (n=8)
+  Arbitrary control hours : median Sharpe -0.430  (n=4)
+  Difference              : -0.076
+  >> NO session effect -- H3 falsified.
+
+------------------------------------------------------------------------------
+  Logged 48 trials -> data\trial_registry.csv
+  Registry now holds 96 trials in total.
+  That count feeds the multiple-testing correction. Keep it honest.
+
+==============================================================================
+  Families surviving Stage 3: ['H1_trend_persistence']
+  Next: cost stress at 2x, then parameter-surface inspection.
+==============================================================================
+

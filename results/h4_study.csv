@@ -1,0 +1,23 @@
+variant,params,control,n_trades,win_rate,payoff,sharpe,max_dd,exp_r_free,ci_lo,ci_hi,significant,exp_r_real,passes_bar
+0,"{""lookback"": 50, ""percentile"": 15, ""stop_mult"": 1.5, ""trail_mult"": 2.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,71,35.21,2.395,0.3412,12.68,0.1637,-0.3027,0.6301,False,0.0747,False
+1,"{""lookback"": 50, ""percentile"": 15, ""stop_mult"": 1.5, ""trail_mult"": 3.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,69,28.99,3.891,0.5817,13.19,0.4287,-0.3511,1.2084,False,0.3351,False
+2,"{""lookback"": 50, ""percentile"": 15, ""stop_mult"": 2.5, ""trail_mult"": 2.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,71,39.44,1.924,0.2864,7.77,0.0864,-0.2007,0.3735,False,0.0372,False
+3,"{""lookback"": 50, ""percentile"": 15, ""stop_mult"": 2.5, ""trail_mult"": 3.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,68,32.35,2.791,0.3803,10.63,0.167,-0.2918,0.6259,False,0.1071,False
+4,"{""lookback"": 50, ""percentile"": 30, ""stop_mult"": 1.5, ""trail_mult"": 2.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,134,29.85,2.075,-0.171,25.61,-0.0642,-0.3269,0.1986,False,-0.1286,False
+5,"{""lookback"": 50, ""percentile"": 30, ""stop_mult"": 1.5, ""trail_mult"": 3.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,128,25.0,3.517,0.276,23.58,0.1178,-0.3242,0.5597,False,0.0198,False
+6,"{""lookback"": 50, ""percentile"": 30, ""stop_mult"": 2.5, ""trail_mult"": 2.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,132,33.33,1.692,-0.2417,15.58,-0.0545,-0.2184,0.1094,False,-0.1064,False
+7,"{""lookback"": 50, ""percentile"": 30, ""stop_mult"": 2.5, ""trail_mult"": 3.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,122,31.97,2.412,0.2132,15.72,0.0618,-0.2124,0.3361,False,0.0078,False
+8,"{""lookback"": 100, ""percentile"": 15, ""stop_mult"": 1.5, ""trail_mult"": 2.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,82,30.49,2.405,0.0924,13.75,0.0309,-0.3725,0.4344,False,-0.056,False
+9,"{""lookback"": 100, ""percentile"": 15, ""stop_mult"": 1.5, ""trail_mult"": 3.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,79,22.78,4.202,0.3063,20.45,0.1784,-0.4897,0.8466,False,0.0755,False
+10,"{""lookback"": 100, ""percentile"": 15, ""stop_mult"": 2.5, ""trail_mult"": 2.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,82,34.15,1.809,-0.0648,9.11,-0.0221,-0.2521,0.2078,False,-0.0692,False
+11,"{""lookback"": 100, ""percentile"": 15, ""stop_mult"": 2.5, ""trail_mult"": 3.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,78,30.77,2.872,0.3343,11.94,0.1344,-0.281,0.5498,False,0.0819,False
+12,"{""lookback"": 100, ""percentile"": 30, ""stop_mult"": 1.5, ""trail_mult"": 2.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,139,34.53,2.029,0.1415,23.68,0.0381,-0.2438,0.32,False,-0.0467,False
+13,"{""lookback"": 100, ""percentile"": 30, ""stop_mult"": 1.5, ""trail_mult"": 3.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,134,26.87,3.158,0.2663,24.36,0.1065,-0.3175,0.5305,False,0.0135,False
+14,"{""lookback"": 100, ""percentile"": 30, ""stop_mult"": 2.5, ""trail_mult"": 2.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,135,39.26,1.674,0.141,14.35,0.0272,-0.1501,0.2045,False,-0.0247,False
+15,"{""lookback"": 100, ""percentile"": 30, ""stop_mult"": 2.5, ""trail_mult"": 3.0, ""breakout_lookback"": 20, ""max_hold"": 48}",False,126,33.33,2.25,0.2054,14.22,0.057,-0.2143,0.3282,False,-0.0029,False
+16,"{""lookback"": 100, ""percentile"": 20, ""stop_mult"": 1.5, ""trail_mult"": 2.0, ""breakout_lookback"": 10, ""max_hold"": 48}",False,154,33.12,2.009,0.0246,17.2,-0.0027,-0.25,0.2447,False,-0.0764,False
+17,"{""lookback"": 100, ""percentile"": 20, ""stop_mult"": 2.5, ""trail_mult"": 2.0, ""breakout_lookback"": 10, ""max_hold"": 48}",False,150,37.33,1.602,-0.0503,12.93,-0.0143,-0.1618,0.1331,False,-0.063,False
+18,"{""lookback"": 100, ""percentile"": 20, ""stop_mult"": 1.5, ""trail_mult"": 2.0, ""breakout_lookback"": 30, ""max_hold"": 48}",False,74,31.08,2.362,0.0971,17.62,0.0352,-0.3918,0.4622,False,-0.0407,False
+19,"{""lookback"": 100, ""percentile"": 20, ""stop_mult"": 2.5, ""trail_mult"": 2.0, ""breakout_lookback"": 30, ""max_hold"": 48}",False,74,33.78,1.88,-0.0338,10.73,-0.014,-0.2585,0.2305,False,-0.0604,False
+20,"{""lookback"": 100, ""percentile"": 50, ""stop_mult"": 2.0, ""trail_mult"": 2.0, ""breakout_lookback"": 20, ""max_hold"": 48}",True,183,36.61,1.758,0.0563,20.64,0.0065,-0.1732,0.1861,False,-0.0548,False
+21,"{""lookback"": 100, ""percentile"": 100, ""stop_mult"": 2.0, ""trail_mult"": 2.0, ""breakout_lookback"": 20, ""max_hold"": 48}",True,343,38.48,1.773,0.2937,21.42,0.0472,-0.0826,0.177,False,-0.0047,False

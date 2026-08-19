@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+title: >-
+  Replication materials: Bar interval outweighs entry mechanism
+  in short-horizon systematic trading
+message: >-
+  If you use this software or dataset, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Muhammad Ubaida
+    family-names: Butt
+    email: mubaidabutt@gmail.com
+    affiliation: >-
+      Suleman Dawood School of Business, Lahore University of
+      Management Sciences
+repository-code: >-
+  https://github.com/mubaidabutt/xauusd-systematic-study
+abstract: >-
+  Complete replication materials for a pre-registered study of 222
+  systematic trading configurations in spot gold (XAU/USD),
+  including both pre-registration protocols, the append-only trial
+  registry of every configuration executed, verbatim execution
+  logs, and the full analysis toolchain. No configuration cleared
+  its pre-registered threshold. Price data are licensed and not
+  redistributed; retrieval code is included.
+keywords:
+  - systematic trading
+  - pre-registration
+  - multiple testing
+  - backtest overfitting
+  - transaction costs
+  - null results
+  - reproducibility
+license: MIT
+version: 1.0.0
+date-released: '2026-08-19'

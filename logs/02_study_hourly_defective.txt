@@ -1,0 +1,102 @@
+==============================================================================
+STUDY RUNNER -- development window only
+==============================================================================
+  Using: data\XAUUSDm_h1_mt5.parquet
+  Dev window : 2018-01-02 06:00:00 -> 2023-12-29 21:00:00  (35,495 bars)
+  SEALED     : 2024-01-01 -> 2026-07-31 20:00:00  (not touched)
+  Cost       : $0.40/oz (1x)
+
+------------------------------------------------------------------------------
+H1_trend_persistence  (16 variants)
+------------------------------------------------------------------------------
+  #    trades   sharpe   %long    bar   maxDD    CAGR  verdict
+  0       587   -0.305     51%   0.39   69.8%  -15.8%  below bar
+  1       611   -0.284     52%   0.39   67.4%  -15.6%  below bar
+  2       369   -0.077     51%   0.39   37.6%   -3.8%  below bar
+  3       389   -0.159     52%   0.39   44.9%   -5.7%  below bar
+  4       289   +0.054     51%   0.39   25.9%   -0.2%  below bar
+  5       311   -0.210     52%   0.39   34.8%   -4.5%  below bar
+  6       397   -0.292     50%   0.39   83.0%  -17.2%  below bar
+  7       407   -0.310     50%   0.39   83.8%  -17.8%  below bar
+  8       252   -0.230     50%   0.39   61.2%   -8.2%  below bar
+  9       254   -0.205     50%   0.39   59.9%   -7.5%  below bar
+  10      188   -0.119     50%   0.39   45.9%   -3.6%  below bar
+  11      190   -0.133     50%   0.39   44.6%   -3.8%  below bar
+  12     1854   -1.079     50%   0.39   80.2%  -20.8%  below bar
+  13     1152   -0.760     50%   0.39   71.3%  -15.8%  below bar
+  14     1801   -1.085     50%   0.39   67.3%  -15.0%  below bar
+  15     1066   -0.792     50%   0.39   59.0%  -11.5%  below bar
+
+------------------------------------------------------------------------------
+H2_volatility_regime  (20 variants)
+------------------------------------------------------------------------------
+  #    trades   sharpe   %long    bar   maxDD    CAGR  verdict
+  0       202   -0.796     64%   0.94   60.0%  -11.7%  below bar
+  1       203   -0.763     64%   0.94   45.7%   -8.1%  below bar
+  2       194   -0.331     64%   0.94   31.3%   -3.9%  below bar
+  3       201   -0.587     64%   0.94   26.8%   -4.2%  below bar
+  4       346   -0.678     60%   0.94   70.2%  -13.5%  below bar
+  5       358   -0.913     60%   0.94   61.9%  -12.9%  below bar
+  6       320   -0.123     60%   0.94   39.7%   -2.3%  below bar
+  7       350   -0.602     60%   0.94   37.8%   -5.8%  below bar
+  8       198   -0.831     56%   0.39   60.0%  -12.2%  below bar
+  9       201   -0.514     56%   0.39   42.1%   -6.1%  below bar
+  10      190   -0.381     56%   0.39   39.1%   -4.4%  below bar
+  11      199   -0.304     56%   0.39   25.0%   -2.4%  below bar
+  12      340   -0.993     59%   0.39   74.9%  -17.7%  below bar
+  13      353   -0.986     59%   0.39   64.2%  -13.3%  below bar
+  14      303   -0.233     59%   0.39   41.1%   -3.6%  below bar
+  15      339   -0.820     59%   0.39   44.3%   -7.3%  below bar
+  16      661   -0.617     55%   0.39   69.1%  -12.8%  below bar
+  17      636   -0.760     55%   0.39   53.3%   -9.3%  below bar
+  18      203   -0.726     64%   0.94   49.9%   -8.0%  below bar
+  19      199   -0.758     64%   0.94   35.2%   -5.3%  below bar
+
+------------------------------------------------------------------------------
+H3_session_breakout  (12 variants)
+------------------------------------------------------------------------------
+  #    trades   sharpe   %long    bar   maxDD    CAGR  verdict
+  0       372   -0.261     55%   0.39   36.8%   -4.7%  below bar
+  1       372   -0.314     55%   0.39   27.8%   -3.5%  below bar
+  2       324   -0.427     55%   0.39   44.2%   -6.5%  below bar
+  3       324   -0.545     55%   0.39   35.9%   -5.3%  below bar
+  4       466   -0.786     55%   0.39   57.7%  -10.5%  below bar
+  5       466   -0.599     55%   0.39   37.5%   -5.4%  below bar
+  6       415   -0.649     55%   0.39   52.6%   -8.4%  below bar
+  7       415   -0.468     55%   0.39   35.0%   -4.1%  below bar
+  8       293   -0.231     59%   0.39   26.8%   -2.7%  below bar
+  9       265   -0.401     52%   0.39   39.8%   -4.3%  below bar
+  10      182   -0.774     57%   0.39   21.7%   -4.0%  below bar
+  11       97   -0.459     56%   0.39   13.4%   -1.8%  stage0: only 97 trades
+
+==============================================================================
+STAGE 3 -- FAMILY COHERENCE (the number that matters)
+==============================================================================
+  One variant clearing the bar is weak evidence -- it may be the best
+  of 48 lottery tickets. A family whose MEDIAN variant is profitable
+  cannot be produced by finding one magic parameter.
+
+  family                     n   median     mean     best    worst  passed  verdict
+  H1_trend_persistence      16   -0.257   -0.374   +0.054   -1.085    0/16  incoherent -- discard
+  H2_volatility_regime      20   -0.702   -0.636   -0.123   -0.993    0/20  incoherent -- discard
+  H3_session_breakout       12   -0.463   -0.493   -0.231   -0.786    0/12  incoherent -- discard
+
+------------------------------------------------------------------------------
+H3 CONTROL -- do session hours actually matter?
+------------------------------------------------------------------------------
+  London/NY hours (07,13) : median Sharpe -0.506  (n=8)
+  Arbitrary control hours : median Sharpe -0.430  (n=4)
+  Difference              : -0.076
+  >> NO session effect -- H3 falsified.
+
+------------------------------------------------------------------------------
+  Logged 48 trials -> data\trial_registry.csv
+  Registry now holds 48 trials in total.
+  That count feeds the multiple-testing correction. Keep it honest.
+
+==============================================================================
+  NO family survived Stage 3.
+  Per the pre-registration stopping rule, the correct action is to
+  trade nothing and revise the hypotheses -- not to lower the bar.
+==============================================================================
+

@@ -1,0 +1,23 @@
+{
+  "title": "Replication materials: Bar interval outweighs entry mechanism in short-horizon systematic trading",
+  "description": "<p>Complete replication materials for a pre-registered study of 222 systematic trading configurations in spot gold (XAU/USD).</p><p>Contains both pre-registration protocols committed before testing, the append-only trial registry recording every configuration executed including failures and one implementation defect, verbatim execution logs for every study, the simulation engine with its nine adversarial validation tests, and the full analysis toolchain.</p><p>No configuration cleared its pre-registered threshold and no expectancy estimate produced a confidence interval excluding zero. Price data are licensed from the executing broker and are not redistributed; retrieval code is included.</p>",
+  "upload_type": "software",
+  "license": "MIT",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Butt, Muhammad Ubaida",
+      "affiliation": "Suleman Dawood School of Business, Lahore University of Management Sciences"
+    }
+  ],
+  "keywords": [
+    "systematic trading",
+    "pre-registration",
+    "multiple testing",
+    "backtest overfitting",
+    "transaction costs",
+    "time-series momentum",
+    "null results",
+    "reproducibility"
+  ]
+}

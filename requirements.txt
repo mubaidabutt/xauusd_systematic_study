@@ -1,0 +1,9 @@
+# Analysis environment. Developed on Python 3.13.
+pandas==3.0.2
+numpy==2.4.4
+scipy>=1.14
+pyarrow>=17.0
+matplotlib>=3.9
+
+# Data retrieval only. Windows exclusive; not needed to inspect results.
+# MetaTrader5>=5.0.45

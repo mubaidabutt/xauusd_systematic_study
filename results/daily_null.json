@@ -1,0 +1,103 @@
+{
+  "window": "2004-06-11..2024-01-01",
+  "buy_and_hold": {
+    "sharpe": 0.576,
+    "total_return_pct": 437.1,
+    "cagr_pct": 8.98,
+    "max_drawdown_pct": 44.8,
+    "years": 19.55
+  },
+  "regimes": {
+    "2004-2007 early bull": {
+      "sharpe": 1.316,
+      "total_return_pct": 116.6,
+      "cagr_pct": 24.29,
+      "max_drawdown_pct": 22.0,
+      "years": 3.55
+    },
+    "2008-2011 parabolic": {
+      "sharpe": 0.997,
+      "total_return_pct": 113.5,
+      "cagr_pct": 23.03,
+      "max_drawdown_pct": 28.9,
+      "years": 3.66
+    },
+    "2011-2015 BEAR": {
+      "sharpe": -0.637,
+      "total_return_pct": -41.9,
+      "cagr_pct": -11.79,
+      "max_drawdown_pct": 44.5,
+      "years": 4.33
+    },
+    "2016-2018 range": {
+      "sharpe": 0.806,
+      "total_return_pct": 21.4,
+      "cagr_pct": 10.25,
+      "max_drawdown_pct": 17.4,
+      "years": 1.98
+    },
+    "2018-2023 dev window": {
+      "sharpe": 0.591,
+      "total_return_pct": 56.3,
+      "cagr_pct": 7.74,
+      "max_drawdown_pct": 21.4,
+      "years": 5.99
+    }
+  },
+  "random_entries": {
+    "both": {
+      "mean": 0.0258,
+      "std": 0.2248,
+      "p95": 0.386,
+      "max": 0.671,
+      "n": 300
+    },
+    "long": {
+      "mean": 0.5258,
+      "std": 0.1734,
+      "p95": 0.831,
+      "max": 0.9,
+      "n": 300
+    },
+    "short": {
+      "mean": -0.465,
+      "std": 0.1687,
+      "p95": -0.179,
+      "max": -0.003,
+      "n": 300
+    }
+  },
+  "thresholds": {
+    "both": {
+      "null_mean": 0.0258,
+      "null_std": 0.2252,
+      "expected_best_by_luck": 0.503,
+      "p95_best_by_luck": 0.705
+    },
+    "long": {
+      "null_mean": 0.5258,
+      "null_std": 0.1737,
+      "expected_best_by_luck": 0.894,
+      "p95_best_by_luck": 1.05
+    },
+    "short": {
+      "null_mean": -0.465,
+      "null_std": 0.169,
+      "expected_best_by_luck": -0.107,
+      "p95_best_by_luck": 0.045
+    }
+  },
+  "bar_long": 1.05,
+  "bar_neutral": 0.705,
+  "params": {
+    "file": null,
+    "start": "2004-06-11",
+    "end": "2024-01-01",
+    "trials": 300,
+    "variants": 40,
+    "rate": 0.06,
+    "hold": 20,
+    "stop_mult": 2.5,
+    "outdir": "data"
+  }
+}
